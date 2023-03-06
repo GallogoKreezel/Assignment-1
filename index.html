@@ -5,29 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href=".css">
 </head>
 <body>
-    <!--header-->
-    <header>
-        <table>
-            <tr>
-                <td>
-                    <img src="gallogopic.jpg.JPG" alt="" 
-                    width="150px" height="150px"
-                </td>    
-                <td>
-                    <h1>Kreezel Caguisa Gallogo</h1>
-                    <p>BS in Computer Science</p>
-                    <p>Address: Limokon Ilaya, Dimmiao, Bohol</p>
-                    <p>Mobile Number: +639616184132</p>
-                    <p>Email: kreezelgallogo1030@gmail.com</p>
-                </td>
-            </tr>
-        </table>
-    </header>
-    <br>
-    <!--Personal Background-->
-    <section>
+    <!--Start Header-->
+    <div class="main-container">
+    <div class="header">
+        <div class="cover-photo"></div>
+            <img class="avatar" src="gallogopic.jpg.JPG"/>
+            <h1>Kreezel Gallogo</h1>
+            <p>
+                <em>Student at <strong>BISU Balilihan Campus</strong></em>
+            </p>
+            <p>BS in Computer Science</p>
+        </div>
+    </div>
+    <!--Close Header-->
+    <!--Start Personal Background-->
+    <div class="card">
         <h2>Personal Background</h2>
         <hr>
         <table>
@@ -39,7 +34,6 @@
                     <p>Female</p>
                 </td>
             </tr>
-            <tr>
             <tr>
                 <td>
                     <h3>Age:</h3>
@@ -55,8 +49,7 @@
                 <td>
                     <p>October 30, 2001</p>
                 </td>
-            </tr>
-            <tr>
+            </tr><tr>
                 <td>
                     <h3>Place of Birth:</h3>
                 </td>
@@ -80,70 +73,101 @@
                     <p>Roman Catholic</p>
                 </td>
             </tr>
-        </table>
-    </section>
-    <br>
-    <!--Skills-->
-    <section>
-        <h2>Skills</h2>
-        <hr>
+        </table> 
+    </div>
+    
+        <!--Close Personal Background-->
+        <!--Start Skills-->
+        <div class="card">
+            <h2>Skills</h2>
+            <hr>
+            <table>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li>
+                    HTML
+                    <div class="proficiency proficiency-50"></div>
+                </li>
+                <li>
+                    CSS
+                    <div class="proficiency proficiency-50"></div>
+                </li>
+                <li>
+                    JavaScript
+                    <div class="proficiency proficiency-15"></div>
+                </li>
+                <li>
+                    Photoshop
+                    <div class="proficiency proficiency-50"></div>
+                </li>
             </ul>
-    </section>
-    <br>
-    <!--Job Experiences-->
-    <section>
-        <h2>Job Experiences</h2>
-        <hr>
-        <table border="2px">
-            <tr>
-                <td>
-                    <strong>August 2021 - September 2021</strong>
-                </td>
-                <td>
-                    <p>(SPES) Student Program Educational Subsidy/Assigned at Barangay Limokon Ilaya, Dimiao, Bohol</p>
-                    <ul>
-                        <li>Assisting the barangay secretary</li>
-                        <li>Encoding files and documents</li>
-                        <li>Arranging files and documents</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </section>
-    <br>
-    <!--Trainings and Seminars Attended-->
-    <section>
-        <h2>Trainings and Seminars Attended</h2>
-        <hr>
-        <table border="2px">
-            <tr>
-                <td>
-                    <strong>November 01, 2020 - November 30, 2020</strong>
-                </td>
-                <td>
-                    <p>Work Immersion/Assigned at Municipality of Dimiao Bohol</p>
-                    <ul>
-                        <li>Assisting guest services</li>
-                        <li>Encoding files and documents</li>
-                        <li>Arranging files and documents</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </section>
-    <br>
-    <!--Organizations Involved-->
-    <section>
-        <h2>Organizations Involved</h2>
-        <hr>
-        <ul>
-            <li>(PYM) Parish Youth Ministry</li>
-            <li>Chosen Organization</li>
-        </ul>
-    </section>
+
+            <h4>Legends</h4>
+            <div style="display: flex;">
+
+                <span class="legend-title">Beginner</span>
+                <div class="legend-color legend-color-lightgreen"></div>
+
+                <span class="legend-title">Intermediate</span>
+                <div class="legend-color legend-color-lightblue"></div>
+
+            </div>
+            </table>
+        </div>
+        <!--Close Skills-->
+        <!--Start Job Experiences-->
+        <div class="card">
+            <h2>Job Experiences</h2>
+            <hr>
+            <table border="2px">
+                <tr>
+                    <td>
+                        <strong>August 2021 - September 2021</strong>
+                    </td>
+                    <td>
+                        <p>(SPES) Student Program Educational Subsidy/Assigned at Barangay Limokon Ilaya, Dimiao, Bohol</p>
+                        <ul>
+                            <li>Assisting the Barangay Secretary</li>
+                            <li>Encoding files and documents</li>
+                            <li>Arranging files and documents</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--Close Job Experiences-->
+        <!--Start Trainings and Seminars Attended-->
+        <div class="card">
+            <h2>Trainings and Seminars Attended</h2>
+            <hr>
+            <table border="2px">
+                <tr>
+                    <td>
+                        <strong>November 01, 2020 - November 30, 2020</strong>
+                    </td>
+                    <td>
+                        <p>Work Immersion/Assigned at Municipality of Dimiao Bohol</p>
+                        <ul>
+                            <li>Assisting guest services</li>
+                            <li>Encoding files and documents</li>
+                            <li>Arranging files and documents</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--Close Trainings and Seminars Attended-->
+        <!--Start Organizations Involved-->
+        <div class="card">
+            <h2>Organizations Involved</h2>
+            <hr>
+            <ul>
+                <li>(PYM) Parish Youth Ministry</li>
+                <li>Chosen Organization</li>
+            </ul>
+        </div>
+        <!--Close Organizations Involved-->
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
